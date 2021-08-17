@@ -1,0 +1,20 @@
+@model AccountViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model.Claims)
+        {
+            <tr>
+                <th scope="row">@claim.Type</th>
+                <td>@claim.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

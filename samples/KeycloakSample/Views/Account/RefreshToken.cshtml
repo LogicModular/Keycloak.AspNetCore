@@ -1,0 +1,6 @@
+@model AccountViewModel
+
+<pre><code class="language-json">@Html.Raw(Newtonsoft.Json.Linq.JValue.Parse(@Model.RefreshTokenJson).ToString(Newtonsoft.Json.Formatting.Indented))</code></pre>
+
+<pre><code>@Model.RefreshToken</code></pre>
+
